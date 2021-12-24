@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+ 
+  
+        <form id='form'>
+			    <label for="titre"> <h3>Titre</h3> </label> 
+                <p id="titre_error"></P> 
+			    <input type="text" placeholder=" enter le titre" id="titre" />
+                  
+
+                <label for="auteur"><h3>Nom de l'auteur</h3> </label>
+                <p id="auteur_error"></P>
+                <input type="text" placeholder=" enter le nom de l'auteur" id="auteur" />
+                  
+    
+                <label for="prix"><h3>Prix</h3></label>
+                <p id="prix_error"></P>
+                <input type="text" placeholder=" enter le prix" id="Prix" />
+                   
+
+                <label for="date"><h3>Date de publication</h3></label>
+                <p id="pub_error"></P>
+                <input type="date" placeholder=" enter la date de publication" id="date" />
+                
+                <label for="email"><h3>Email de l'auteur:</h3> </label>
+                <p id="email_error"></P>
+                <input type="text" placeholder=" enter email de l'auteur" id="email" />
+
+                <label for="langue"><h3>Langue</h3></label>
+                <p id="langue_error"></p>
+                <select id="language" name="languages">
+                <option>select a language</option>
+                <option value="Arabe">Arabic</option>
+                <option value="Anglais">English</option>
+                <option value="Francais">French</option>
+                </select>
+
+                <label for="type"><h3>Type</h3></label>
+                <p id="type_error"></P>
+              <div id="radios">
+                  <div id="inputsType">
+                    <input type="radio"name="fav" id="Roman" value="Roman" id="inprd">
+                    <label class="label_radio">Roman</label >
+                    <input type="radio"  name="fav"  id="Essai" value="Essai"  id="inprd">
+                    <label class="label_radio"> Essai</label>
+                    <input type="radio"  name="fav" id="Bande"  value="Bande-Dessinée" id="inprd">
+                    <label class="label_radio">Bande-Dessinée</label>
+                  </div>
+              </div>
+                
+		        <button id="btn">Submit</button>
+
+
+           
+	    </form> 
+
+
+
+
+
+
+        <table id="table">
+            <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Prix</th>
+                <th>Date de publication </th>
+                <th>Email de l'auteur: </th>
+                <th>Langue</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+        
+</body>
+</html>
+
+
