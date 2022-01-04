@@ -12,6 +12,7 @@
  
   
         <form id='form'>
+                <p id="demo"></p>   
 			    <label for="titre"> <h3>Titre</h3> </label> 
                 <p id="titre_error"></P> 
 			    <input type="text" placeholder=" enter le titre" id="titre" />
@@ -38,7 +39,7 @@
                 <label for="langue"><h3>Langue</h3></label>
                 <p id="langue_error"></p>
                 <select id="language" name="languages">
-                <option>select a language</option>
+                <option disabled selected hidden>select a language</option>
                 <option value="Arabe">Arabic</option>
                 <option value="Anglais">English</option>
                 <option value="Francais">French</option>
@@ -58,17 +59,11 @@
               </div>
                 
 		        <button id="btn">Submit</button>
-
-
-           
+                <button onclick="imprimer()" id="print">Imprimer</button>
 	    </form> 
-
-
-
-
-
-
-        <table id="table">
+<div id="tabl">
+    <table id="table">      
+        <thead>
             <tr>
                 <th>Titre</th>
                 <th>Auteur</th>
@@ -79,7 +74,12 @@
                 <th>Type</th>
                 <th>Action</th>
             </tr>
-        </table>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div>
 
         
 </body>
